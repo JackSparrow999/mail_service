@@ -1,0 +1,27 @@
+server:
+  port: 8003
+
+cloud:
+  aws:
+    region:
+      static:
+      auto: false
+    credentials:
+      access-key:
+      secret-key:
+    end-point:
+      mail:
+        uri:
+        queue:
+          name: MailQueue.fifo
+      feedback:
+        uri:
+        queue:
+          name: FeedbackQueue.fifo
+
+email:
+  from:
+
+spring:
+  jackson:
+    property-naming-strategy: SNAKE_CASE
